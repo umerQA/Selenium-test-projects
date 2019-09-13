@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="sirmayaCRM.Login_pageTest">
+        <methods>
+          <include name="validcredentials"/>
+          <include name="Check_emptydetail_client"/>
+          <include name="Searchingclient"/>
+          <include name="opensite"/>
+          <include name="invalidcredentials"/>
+          <include name="Initialsetup"/>
+        </methods>
+      </class> <!-- sirmayaCRM.Login_pageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

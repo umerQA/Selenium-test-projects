@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <parameter name="RanURL" value="http://www.yopmail.com/en/email-generator.php"/>
+   
+  <parameter name="StatURL" value="https://test.statmetrix.co/UI/login"/>
+  
+  <parameter name="GmailURL" value="https://mail.google.com/mail/u/1/#inbox"/>
+  
+  
+   <classes>
+   
+   <class name="statmetrix.Setup"/>
+   <class name="statmetrix.Statmetrix"/>
+   <class name="statmetrix.Random_String_Generator"/>
+   <class name="statmetrix.Gmail_generator"/>
+   <class name="statmetrix.LoginTest"/>
+    
+
+  
+   
+   
+   
+   </classes>
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

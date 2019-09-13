@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\hamza\workspace\TestNG_tutorial\sirmayaCRM.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sirmayaCRM.Main_Test" hash-for-method="addleads_fromsidemenu_button_checks">addleads_fromsidemenu_button_checks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sirmayaCRM.Main_Test" hash-for-method="Searchingclient">Searchingclient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sirmayaCRM.Main_Test" hash-for-method="addleads_checks">addleads_checks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sirmayaCRM.Main_Test" hash-for-method="clientadding_checks">clientadding_checks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sirmayaCRM.Main_Test" hash-for-method="invalidcredentials">invalidcredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sirmayaCRM.Main_Test" hash-for-method="opensite(http://crm.sirmaya.com/login)">opensite(http://crm.sirmaya.com/login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sirmayaCRM.Main_Test" hash-for-method="updateclient_checks">updateclient_checks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sirmayaCRM.Main_Test" hash-for-method="validcredentials">validcredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">sirmayaCRM.Main_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addleads_fromsidemenu_button_checks">
+                  </a> <!-- addleads_fromsidemenu_button_checks -->
+                  <span class="method-name">addleads_fromsidemenu_button_checks</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at sirmayaCRM.Addnewlead_listingpage_Test.addnewlead_fromclientslisting(Addnewlead_listingpage_Test.java:39)
+	at sirmayaCRM.Main_Test.addleads_fromsidemenu_button_checks(Main_Test.java:178)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sirmayaCRM.Main_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Searchingclient">
+                  </a> <!-- Searchingclient -->
+                  <span class="method-name">Searchingclient</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addleads_checks">
+                  </a> <!-- addleads_checks -->
+                  <span class="method-name">addleads_checks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clientadding_checks">
+                  </a> <!-- clientadding_checks -->
+                  <span class="method-name">clientadding_checks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidcredentials">
+                  </a> <!-- invalidcredentials -->
+                  <span class="method-name">invalidcredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="opensite(http://crm.sirmaya.com/login)">
+                  </a> <!-- opensite(http://crm.sirmaya.com/login) -->
+                  <span class="method-name">opensite</span>
+                  <span class="parameters">(http://crm.sirmaya.com/login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateclient_checks">
+                  </a> <!-- updateclient_checks -->
+                  <span class="method-name">updateclient_checks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validcredentials">
+                  </a> <!-- validcredentials -->
+                  <span class="method-name">validcredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\hamza\workspace\TestNG_tutorial\sirmayaCRM.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;http://crm.sirmaya.com/login&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;sirmayaCRM&quot;/&gt;
+      &lt;package name=&quot;sirmayaCRM_ObjectsRepo&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;sirmayaCRM.Addclient_Test&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM.Addlead_Test&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM.Addnewlead_listingpage_Test&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM.Base_invocationTest&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM.Clientadvance_search_Test&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM.Main_Test&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM.Random_String_GeneratorTest&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM.SearchingClient_Test&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM.Updateclient_Test&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM_ObjectsRepo.add_clientpage_Repo&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM_ObjectsRepo.add_leadspage_Repo&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM_ObjectsRepo.add_leads_Listingpage_repo&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM_ObjectsRepo.Clientadvance_searchpage_Repo&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM_ObjectsRepo.ClientEditPage_Repo&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM_ObjectsRepo.ClientsListingPage_Repo&quot;/&gt;
+      &lt;class name=&quot;sirmayaCRM_ObjectsRepo.Loginpage_Repo&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (16 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addleads_checks')
+data.setCell(0, 2, 'sirmayaCRM.Main_Test')
+data.setCell(0, 3, 95950);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Searchingclient')
+data.setCell(1, 2, 'sirmayaCRM.Main_Test')
+data.setCell(1, 3, 84213);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clientadding_checks')
+data.setCell(2, 2, 'sirmayaCRM.Main_Test')
+data.setCell(2, 3, 46397);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'updateclient_checks')
+data.setCell(3, 2, 'sirmayaCRM.Main_Test')
+data.setCell(3, 3, 30574);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'opensite')
+data.setCell(4, 2, 'sirmayaCRM.Main_Test')
+data.setCell(4, 3, 16400);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addleads_fromsidemenu_button_checks')
+data.setCell(5, 2, 'sirmayaCRM.Main_Test')
+data.setCell(5, 3, 8463);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validcredentials')
+data.setCell(6, 2, 'sirmayaCRM.Main_Test')
+data.setCell(6, 3, 5562);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidcredentials')
+data.setCell(7, 2, 'sirmayaCRM.Main_Test')
+data.setCell(7, 3, 3243);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">sirmayaCRM.Main_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Initialsetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">opensite(http://crm.sirmaya.com/login)</span>
+                <span class="method-start">13374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidcredentials</span>
+                <span class="method-start">29786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validcredentials</span>
+                <span class="method-start">33037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Searchingclient</span>
+                <span class="method-start">38607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clientadding_checks</span>
+                <span class="method-start">122828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addleads_checks</span>
+                <span class="method-start">169233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateclient_checks</span>
+                <span class="method-start">265187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addleads_fromsidemenu_button_checks</span>
+                <span class="method-start">295769 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

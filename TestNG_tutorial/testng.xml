@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Into">
+
+	<test thread-count="5" name="Testcase1-2">
+		<classes>
+			<class name="basic.TestNG1" />
+			<class name="basic.TestNG2" >
+			
+		
+			
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+
+	
+
+
+
+	<test thread-count="10" name="Testcase-3-4">
+		<classes>
+			<class name="basic.TestNG3" >
+			
+				<methods>
+			<include name="HomeLoanDept"/>
+			</methods>
+	   </class>
+			 
+			 
+			<class name="basic.TestNG4">
+				<methods>
+					<exclude name="HealthcardDept" />
+				</methods>
+
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+
+
+
+</suite> <!-- Suite -->
